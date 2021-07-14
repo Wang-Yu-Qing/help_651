@@ -9,40 +9,45 @@ class Node():
 
 
 def dfs(start, cur_station, cur_route, w_so_far, trans_so_far):
+    """
+        @start: start station (station to compute accessibility)
+        @cur_station: station to reach for the current step
+        @cur_route: the route taken to reach the current station
+        @w_so_far: the total weights needed to reach the current station
+        @trans_so_far: the total transfer time needed to reach the current station
+    """
     global res, searched, MAX_W, MAX_TRANSFER
-    for n, w, r in zip(cur_station.neighs, cur_station.weights, cur_station.routes):
-        # update trans so far and current route 
-        # if reach station n needs transfer
-        if r != cur_route and not cur_station.is_transfer:
-            _trans_so_far = trans_so_far + 1
-            _cur_route = r
+    # check if we can reach this station
+    if cur_station.ID in searched or w_so_far > MAX_W or trans_so_far > MAX_TRANSFER:
+        return
+
+    # if we are here, cur_station is valid
+    searched.add(n.ID)
+    try:
+        res[start.ID].append((cur_station.ID, w_so_far))
+    except KeyError:
+        res[start.ID] = [(cur_station.ID, w_so_far)]
+
+    # so let's begin searching from cur_station
+    for next_station, weight, route in zip(cur_station.neighs, cur_station.weights, cur_station.routes):
+        if route != cur_route and not cur_station.is_transfer:
+            # we need transfer to reach the next station
+            dfs(start, next_station, route, w_so_far + weight, trans_so_far + 1)
         else:
-            _trans_so_far = trans_so_far
-            _cur_route = cur_route
-
-        # update weights so far if reach station n
-        _w_so_far = w_so_far + w
-
-        # check if this potential next station is valid
-        if n.ID in searched or _w_so_far > MAX_W or _trans_so_far > MAX_TRANSFER:
-            continue
-        
-        # if reach here, the n is a valid reach station
-        searched.add(n.ID)
-
-        # add n to valid reach station
-        try:
-            res[start.ID].append((n.ID, _w_so_far))
-        except KeyError:
-            res[start.ID] = [(n.ID, _w_so_far)]
-
-        # search from station n
-        dfs(start, n, _cur_route, _w_so_far, _trans_so_far)
-
-    return None
+            # we don't need transfer to reach the next station
+            dfs(start, next_station, route, w_so_far + weight, trans_so_far)
 
 
 if __name__ == "__main__":
+    """
+        1 : [(2, 2), (3, 4), (12, 2), (5, 1), (6, 4), (10, 5), (11, 1)] 
+        2 : [(3, 2), (12, 0)] 
+        4 : [(1, 3), (2, 5), (12, 5), (5, 4), (11, 4)] 
+        5 : [(6, 3), (10, 4), (11, 0)] 
+        6 : [(7, 4), (10, 1)] 
+        8 : [(6, 3), (10, 4)] 
+        9 : [(1, 2), (2, 4), (12, 4), (5, 3), (11, 3)]
+    """
     n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12 = \
         Node(1, "A,B", True), Node(2, "A,E", True), Node(3, "A", False), \
         Node(4, "A", False), Node(5, "B", False), Node(6, "B,D", True), \
