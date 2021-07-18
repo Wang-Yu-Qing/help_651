@@ -14,7 +14,7 @@ def dfs(start, cur_station, cur_route, w_so_far, trans_so_far):
         @cur_station: station to reach for the current step
         @cur_route: the route taken to reach the current station
         @w_so_far: the total weights needed to reach the current station
-        @trans_so_far: the total transfer time needed to reach the current station
+        @trans_so_far: the total transfer times needed to reach the current station
     """
     global res, searched, MAX_W, MAX_TRANSFER
     # check if we can reach this station
@@ -22,7 +22,7 @@ def dfs(start, cur_station, cur_route, w_so_far, trans_so_far):
         return
 
     # if we are here, cur_station is valid
-    searched.add(n.ID)
+    searched.add(cur_station.ID)
     try:
         res[start.ID].append((cur_station.ID, w_so_far))
     except KeyError:
