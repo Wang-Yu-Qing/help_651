@@ -40,8 +40,8 @@
         <mxCell id="h5kKYo-_dhXHsnKXQvqF-10" value="……" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="150" y="350" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="h5kKYo-_dhXHsnKXQvqF-19" value="&lt;ul&gt;&lt;li&gt;扩展插件相比于SAS更轻量，对个人来说更可实现&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;去目标用户常发表意见的地方，去收集需求&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;从各个网站上收集数据，例如搜索排行等，提炼需求&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="590" y="115" width="320" height="60" as="geometry" />
+        <mxCell id="h5kKYo-_dhXHsnKXQvqF-19" value="&lt;ul&gt;&lt;li&gt;扩展插件相比于SAS更轻量，对个人来说更可实现&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;去目标用户常发表意见的地方，去收集需求&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;从各个网站上收集数据，例如搜索排行等，提炼需求&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;广告？https://www.starterstory.com/solo?utm_campaign=saeed&amp;amp;utm_source=youtube&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="115" width="320" height="95" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
