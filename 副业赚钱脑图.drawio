@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="第 1 页" id="251uv5qzhBT_Lm49wtqx">
     <mxGraphModel dx="2668" dy="1003" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -42,6 +42,9 @@
         </mxCell>
         <mxCell id="h5kKYo-_dhXHsnKXQvqF-19" value="&lt;ul&gt;&lt;li&gt;扩展插件相比于SAS更轻量，对个人来说更可实现&lt;/li&gt;&lt;li style=&quot;&quot;&gt;去目标用户常发表意见的地方，去收集需求&lt;/li&gt;&lt;li style=&quot;&quot;&gt;从各个网站上收集数据，例如搜索排行等，提炼需求&lt;/li&gt;&lt;li style=&quot;&quot;&gt;广告？https://www.starterstory.com/solo?utm_campaign=saeed&amp;amp;utm_source=youtube&lt;/li&gt;&lt;li style=&quot;&quot;&gt;思考其他非技术从业者，例如医生、律师等对AI的需求，并为他们提供解决需求的ai插件&lt;/li&gt;&lt;li style=&quot;&quot;&gt;先提供免费服务，然后提供收费服务，并探索性地设置服务价格&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="580" y="55" width="370" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="hHvOTV0vm-1v4tKSAE3K-1" value="shadowsocks" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="480" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
