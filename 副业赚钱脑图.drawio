@@ -61,6 +61,9 @@
         <mxCell id="hHvOTV0vm-1v4tKSAE3K-4" value="https://web3.career/ai+remote-jobs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="600" width="190" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="hHvOTV0vm-1v4tKSAE3K-10" value="工作分布，薪资、技能等" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="720" width="135" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
